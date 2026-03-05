@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Portfólio Completo - Victor Cestaro</title>
+</head>
+
+<body>
+    <header class="menu-desktop">
+        <div class="logo">
+            <h1 class="nome-principal">Victor Cestaro</h1>
+        </div>
+        <nav class="nav-desktop">
+            <a href="index.html" class="link-menu">Inicio</a>
+            <a href="index.html#servicos" class="link-menu">Serviços</a>
+            <a href="portfolio.html" class="link-menu">Projetos</a>
+            <a href="sobre.html" class="link-menu">Sobre</a>
+            <a href="contato.html" class="link-menu">Contato</a>
+        </nav>
+        <button class="menu-hamburger" id="menuHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="link-menu-mobile">Inicio</a>
+        <a href="index.html#servicos" class="link-menu-mobile">Serviços</a>
+        <a href="portfolio.html" class="link-menu-mobile">Projetos</a>
+        <a href="sobre.html" class="link-menu-mobile">Sobre</a>
+        <a href="contato.html" class="link-menu-mobile">Contato</a>
+    </nav>
+
+    <main>
+        <section class="galeria-projetos">
+            <div class="container-galeria">
+                <div class="galeria-header">
+                    <div class="galeria-info">
+                        <h1 class="galeria-titulo">Meus Projetos</h1>
+                        <p class="galeria-descricao">Landing Pages, plataformas SaaS, e-commerce, blogs e design
+                            profissional. Veja alguns dos projetos que ajudaram empresas a crescer.</p>
+                    </div>
+                    <button class="btn-voltar">
+                        <span>← Voltar</span>
+                    </button>
+                </div>
+
+                <div class="filtros-galeria">
+                    <div class="abas-filtro">
+                        <button class="aba-filtro aba-filtro-ativo" data-filter="todos">
+                            Todos
+                        </button>
+                        <button class="aba-filtro" data-filter="sites">
+                            Sites
+                        </button>
+                        <button class="aba-filtro" data-filter="jogos">
+                            Jogos
+                        </button>
+                        <button class="aba-filtro" data-filter="design">
+                            Design
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid-galeria">
+                    <!-- E-commerce Pro -->
+                    <div class="card-galeria" data-filter="sites">
+                        <div class="galeria-imagem">
+                            <span class="badge-galeria">PRO</span>
+                            <div class="image-project">
+                                <img src="../assets/images/novamarca.png" alt="">
+                            </div>
+                        </div>
+                        <div class="galeria-card-info">
+                            <h3 class="galeria-card-titulo">Novamarca</h3>
+                            <p class="galeria-card-descricao">Landing Page para empresa de Marca e patentes</p>
+                            <div class="galeria-card-tags">
+                                <span class="galeria-tag">React</span>
+                                <span class="galeria-tag">Node.js</span>
+                                <span class="galeria-tag">PostgreSQL</span>
+                            </div>
+                            <div class="galeria-card-footer">
+                                <a href="http://novamarca.com.br"><button class="btn-ver-projeto">Ver
+                                        Projeto</button></a>
+                                <button class="btn-compartilhar" title="Compartilhar">⧉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria" data-filter="sites">
+                        <div class="galeria-imagem">
+                            <span class="badge-galeria">PRO</span>
+                            <div class="image-project">
+                                <img src="../assets/images/cacaucafe.png" alt="">
+                            </div>
+                        </div>
+                        <div class="galeria-card-info">
+                            <h3 class="galeria-card-titulo">CacauCafé</h3>
+                            <p class="galeria-card-descricao">Landing Page para empresa de CacauCafé</p>
+                            <div class="galeria-card-tags">
+                                <span class="galeria-tag">React</span>
+                                <span class="galeria-tag">Node.js</span>
+                                <span class="galeria-tag">PostgreSQL</span>
+                            </div>
+                            <div class="galeria-card-footer">
+                                <a href="http://cacaucafe.com.br"><button class="btn-ver-projeto">Ver
+                                        Projeto</button></a>
+                                <button class="btn-compartilhar" title="Compartilhar">⧉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria" data-filter="sites">
+                        <div class="galeria-imagem">
+                            <span class="badge-galeria">PRO</span>
+                            <div class="image-project">
+                                <img src="../assets/images/neoprotec.png" alt="Neoprotec">
+                            </div>
+                        </div>
+                        <div class="galeria-card-info">
+                            <h3 class="galeria-card-titulo">Neoprotec</h3>
+                            <p class="galeria-card-descricao">Landing Page para empresa de Neoprotec</p>
+                            <div class="galeria-card-tags">
+                                <span class="galeria-tag">React</span>
+                                <span class="galeria-tag">Node.js</span>
+                                <span class="galeria-tag">PostgreSQL</span>
+                            </div>
+                            <div class="galeria-card-footer">
+                                <a href="http://neoprotec.com.br"><button class="btn-ver-projeto">Ver
+                                        Projeto</button></a>
+                                <button class="btn-compartilhar" title="Compartilhar">⧉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria" data-filter="sites">
+                        <div class="galeria-imagem">
+                            <span class="badge-galeria">PRO</span>
+                            <div class="image-project">
+                                <img src="../assets/images/somaiclub.png" alt="Somaiclub">
+                            </div>
+                        </div>
+                        <div class="galeria-card-info">
+                            <h3 class="galeria-card-titulo">Somaiclub</h3>
+                            <p class="galeria-card-descricao">Landing Page para empresa de Somaiclub</p>
+                            <div class="galeria-card-tags">
+                                <span class="galeria-tag">React</span>
+                                <span class="galeria-tag">Node.js</span>
+                                <span class="galeria-tag">PostgreSQL</span>
+                            </div>
+                            <div class="galeria-card-footer">
+                                <a href="http://somaiclub.com.br"><button class="btn-ver-projeto">Ver
+                                        Projeto</button></a>
+                                <button class="btn-compartilhar" title="Compartilhar">⧉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-galeria" data-filter="sites">
+                        <div class="galeria-imagem">
+                            <span class="badge-galeria">PRO</span>
+                            <div class="image-project">
+                                <img src="../assets/images/radiocomunicativa.png" alt="Radiocomunicativa">
+                            </div>
+                        </div>
+                        <div class="galeria-card-info">
+                            <h3 class="galeria-card-titulo">Radiocomunicativa</h3>
+                            <p class="galeria-card-descricao">Landing Page para empresa de Radiocomunicativa</p>
+                            <div class="galeria-card-tags">
+                                <span class="galeria-tag">React</span>
+                                <span class="galeria-tag">Node.js</span>
+                                <span class="galeria-tag">PostgreSQL</span>
+                            </div>
+                            <div class="galeria-card-footer">
+                                <a href="http://radiocomunicativa.com.br"><button class="btn-ver-projeto">Ver
+                                        Projeto</button></a>
+                                <button class="btn-compartilhar" title="Compartilhar">⧉</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RPG Inventory System -->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="destaques-tecnicos">
+            <div class="container-destaques">
+                <h2 class="destaques-titulo">Destaques Técnicos</h2>
+                <p class="destaques-descricao">Top tecnologias e metodologias que atuam em meus projetos.</p>
+
+                <div class="grid-tecnologias">
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">⬢</span>
+                        <span class="tech-nome">React</span>
+                    </div>
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">▲</span>
+                        <span class="tech-nome">Unity</span>
+                    </div>
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">◆</span>
+                        <span class="tech-nome">Node.js</span>
+                    </div>
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">■</span>
+                        <span class="tech-nome">React Native</span>
+                    </div>
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">⬠</span>
+                        <span class="tech-nome">PostgreSQL</span>
+                    </div>
+                    <div class="card-tecnologia">
+                        <span class="tech-icon">☁</span>
+                        <span class="tech-nome">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">VictorCestaro</span>
+            </div>
+
+            <div class="footer-content">
+                <p class="footer-copyright">© 2024 Design & Código por Victor Cestaro.<br>Todos os direitos reservados.
+                </p>
+
+                <div class="footer-sociais">
+                    <a href="mailto:contact@victorcestaro.com" class="social-link" title="Email">
+                        <span class="social-icon">✉</span> Email
+                    </a>
+                    <a href="https://linkedin.com/in/victorcestaro" target="_blank" class="social-link"
+                        title="LinkedIn">
+                        <span class="social-icon">in</span> LinkedIn
+                    </a>
+                    <a href="https://github.com/victorcestaro" target="_blank" class="social-link" title="GitHub">
+                        <span class="social-icon">◈</span> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5516992119714?text=Olá%20Victor!%20Gostaria%20de%20conversar%20sobre%20serviços"
+        target="_blank" class="whatsapp-btn" title="Entre em contato via WhatsApp">
+        <img src="../assets/icons/whatsapp.png" alt="whatsapp" class="whatsapp-icon">
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

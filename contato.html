@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Contato - Victor Cestaro</title>
+</head>
+
+<body>
+    <header class="menu-desktop">
+         <div class="logo"><h1 class="nome-principal">Victor Cestaro</h1></div>
+        <nav class="nav-desktop">
+            <a href="index.html" class="link-menu">Inicio</a>
+            <a href="index.html#servicos" class="link-menu">Serviços</a>
+            <a href="portfolio.html" class="link-menu">Projetos</a>
+            <a href="sobre.html" class="link-menu">Sobre</a>
+            <a href="contato.html" class="link-menu">Contato</a>
+        </nav>
+        <button class="menu-hamburger" id="menuHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="link-menu-mobile">Inicio</a>
+        <a href="index.html#servicos" class="link-menu-mobile">Serviços</a>
+        <a href="portfolio.html" class="link-menu-mobile">Projetos</a>
+        <a href="sobre.html" class="link-menu-mobile">Sobre</a>
+        <a href="contato.html" class="link-menu-mobile">Contato</a>
+    </nav>
+
+    <main>
+        <section class="contato-conexoes">
+            <div class="container-contato">
+                <div class="contato-header">
+                    <a href="index.html"><span class="breadcrumb">← VOLTAR PARA PRINCIPAIS</span></a>
+                    <h1 class="contato-titulo">Vamos Conversar!</h1>
+                    <p class="contato-descricao">Tem um projeto em mente? Quer discutir Landing Page, SaaS, E-commerce ou Design? Estou disponível para uma conversa produtiva. Mande uma mensagem!</p>
+                </div>
+
+                <div class="grid-contato">
+                    <!-- FORMULÁRIO -->
+                    <div class="contato-form-container">
+                        <div class="form-section">
+                            <h2 class="form-titulo">Envie uma mensagem</h2>
+                            <form class="contato-form" id="contatoForm" action="https://formspree.io/f/mqeeblel"
+  method="POST">
+                                <div class="form-group">
+                                    <label for="nome" class="form-label">Nome completo</label>
+                                    <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="assunto" class="form-label">Assunto</label>
+                                    <select id="assunto" name="assunto" class="form-input" required>
+                                        <option value="">Selecione um assunto</option>
+                                        <option value="parceria">Parceria</option>
+                                        <option value="projeto">Projeto</option>
+                                        <option value="emprego">Oportunidade de Emprego</option>
+                                        <option value="duvida">Dúvida</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensagem" class="form-label">Mensagem</label>
+                                    <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Como posso ajudar você?" rows="6" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-enviar-msg">Enviar Mensagem ➜</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <div class="contato-sidebar">
+                        <!-- GITHUB STATS -->
+                        <div class="card-github-stats">
+                            <div class="github-header">
+                            <span class="github-icon">◈</span>
+                            </div>
+
+                            <div class="github-stats-grid">
+                                <div class="stat-box">
+                                    <span class="stat-valor">2.4k</span>
+                                    <span class="stat-label">Followers</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-valor">4B</span>
+                                    <span class="stat-label">Estrelas</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-valor">120</span>
+                                    <span class="stat-label">Repos</span>
+                                </div>
+                            </div>
+
+                            <div class="github-links">
+                                <a href="https://github.com/victorcestaro" target="_blank" class="github-link">Visualizar GitHub →</a>
+                            </div>
+                        </div>
+
+                        <!-- OUTRAS CONEXÕES -->
+                        <div class="outras-conexoes">
+                            <h3 class="conexoes-titulo">Outras conexões</h3>
+
+                            <a href="https://linkedin.com/in/victorcestaro" target="_blank" class="card-conexao">
+                                <div class="conexao-icon">◆</div>
+                                <div class="conexao-info">
+                                    <h4 class="conexao-nome">LinkedIn</h4>
+                                    <p class="conexao-handle">@victorcestaro</p>
+                                </div>
+                                <span class="conexao-arrow">→</span>
+                            </a>
+
+                            <a href="https://github.com/victorcestaro" target="_blank" class="card-conexao">
+                                <div class="conexao-icon">◈</div>
+                                <div class="conexao-info">
+                                    <h4 class="conexao-nome">GitHub</h4>
+                                    <p class="conexao-handle">@victorcestaro</p>
+                                </div>
+                                <span class="conexao-arrow">→</span>
+                            </a>
+
+                            <a href="https://reddit.com/u/victorcestaro" target="_blank" class="card-conexao">
+                                <div class="conexao-icon">⬤</div>
+                                <div class="conexao-info">
+                                    <h4 class="conexao-nome">Reddit</h4>
+                                    <p class="conexao-handle">u/victorcestaro</p>
+                                </div>
+                                <span class="conexao-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEWSLETTER -->
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h2 class="newsletter-titulo">Subscrever-se agora</h2>
+                        <p class="newsletter-descricao">Mande um e-mail direto para:</p>
+                        <p class="newsletter-email">contact@victorcestaro.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">VictorCestaro</span>
+            </div>
+
+            <div class="footer-content">
+                <p class="footer-copyright">© 2024 Design & Código por Victor Cestaro.<br>Todos os direitos reservados.</p>
+                
+                <div class="footer-sociais">
+                    <a href="mailto:contact@victorcestaro.com" class="social-link" title="Email">
+                        <span class="social-icon">✉</span> Email
+                    </a>
+                    <a href="https://linkedin.com/in/victorcestaro" target="_blank" class="social-link" title="LinkedIn">
+                        <span class="social-icon">in</span> LinkedIn
+                    </a>
+                    <a href="https://github.com/victorcestaro" target="_blank" class="social-link" title="GitHub">
+                        <span class="social-icon">◈</span> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5516992119714?text=Olá%20Victor!%20Gostaria%20de%20conversar%20sobre%20serviços"
+        target="_blank" class="whatsapp-btn" title="Entre em contato via WhatsApp">
+        <img src="../assets/icons/whatsapp.png" alt="whatsapp" class="whatsapp-icon">
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+

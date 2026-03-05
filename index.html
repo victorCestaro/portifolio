@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Portifólio - Victor Cestaro</title>
+</head>
+
+<body>
+    <header class="menu-desktop">
+        <div class="logo">
+            <h1 class="nome-principal">Victor Cestaro</h1>
+        </div>
+        <nav class="nav-desktop">
+            <a href="index.html" class="link-menu">Inicio</a>
+            <a href="#servicos" class="link-menu">Serviços</a>
+            <a href="portfolio.html" class="link-menu">Projetos</a>
+            <a href="sobre.html" class="link-menu">Sobre</a>
+            <a href="contato.html" class="link-menu">Contato</a>
+        </nav>
+        <button class="menu-hamburger" id="menuHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="nav-mobile" id="navMobile">
+        <a href="index.html" class="link-menu-mobile">Inicio</a>
+        <a href="#servicos" class="link-menu-mobile">Serviços</a>
+        <a href="portfolio.html" class="link-menu-mobile">Projetos</a>
+        <a href="sobre.html" class="link-menu-mobile">Sobre</a>
+        <a href="contato.html" class="link-menu-mobile">Contato</a>
+    </nav>
+
+    <main>
+        <section class="banner-entrada">
+            <div class="container-banner">
+                <div class="content-banner">
+                    <h1 class="nome-principal">Victor Cestaro</h1>
+                    <h2 class="subtitulo">Desenvolvedor Web & Sistemas Sob Medida</h2>
+                    <p class="descricao">Crio plataformas, e-commerces e aplicações com backend e integrações reais para
+                        empresas que precisam de soluções digitais completas — não apenas um site.</p>
+
+                    <div class="botoes-banner">
+                        <a href="#servicos"><button class="btn btn-primary">Ver Projetos</button></a>
+                        <a href="contato.html"><button class="btn btn-secondary">Solicitar Orçamento</button></a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-numero">50+</span>
+                            <span class="stat-label">PROJETOS</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-numero">30+</span>
+                            <span class="stat-label">CLIENTES</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-numero">5+</span>
+                            <span class="stat-label">ANOS EXP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-display">
+                    <div class="code-header">
+                        <span class="code-title">portfolio.main.tsx</span>
+                    </div>
+                    <div class="code-content">
+                        <pre>&lt;div className="hero"&gt;
+  &lt;h1&gt;Victor Cestaro&lt;/h1&gt;
+  &lt;p&gt;Fullstack & Game Dev&lt;/p&gt;
+  &lt;button&gt;Explore&lt;/button&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="servicos" class="servicos">
+            <div class="container-servicos">
+                <h2 class="titulo-servicos">Meus Serviços</h2>
+                <p class="subtitulo-servicos">Soluções em Sites, Jogos e Design</p>
+
+                <div class="abas-servicos">
+                    <button class="aba-servico aba-servico-ativo" data-servico="sites">
+                        <span class="servico-icon">🌐</span>
+                        <span class="servico-label">Sites</span>
+                    </button>
+                    <button class="aba-servico" data-servico="jogos">
+                        <span class="servico-icon">🎮</span>
+                        <span class="servico-label">Jogos</span>
+                    </button>
+                    <button class="aba-servico" data-servico="design">
+                        <span class="servico-icon">🎨</span>
+                        <span class="servico-label">Design</span>
+                    </button>
+                </div>
+
+                <div class="cards-servicos">
+                    <!-- SITES -->
+                    <div class="card-servico" data-servico="sites" style="display: flex;">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Landing Page</h3>
+                            <p class="servico-categoria">Conversão & Performance</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Landing pages estratégicas com foco em conversão, integradas a sistemas e ferramentas de
+                                marketing. Ideal para campanhas pagas, lançamento de produtos e geração de leads
+                                qualificados.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Design Responsivo</span>
+                                <span class="feature">✓ Integração com CRM / API</span>
+                                <span class="feature">✓ Formulários com validação backend</span>
+                                <span class="feature">✓ Analytics & Tracking</span>
+                                <span class="feature">✓ Estrutura SEO básica</span>
+                                <span class="feature">✓ Performance otimizada</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 1.700+</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="sites" style="display: flex;">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">SaaS</h3>
+                            <p class="servico-categoria">Plataforma Web Sob Medida</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Desenvolvimento de aplicações web completas com autenticação, controle de usuários e
+                                integração com serviços externos. Ideal para startups e empresas que precisam
+                                transformar processos em sistemas digitais.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Autenticação & Controle de Acesso</span>
+                                <span class="feature">✓ Painel Administrativo </span>
+                                <span class="feature">✓ API RESTful</span>
+                                <span class="feature">✓ Banco de Dados Cloud</span>
+                                <span class="feature">✓ Integração Stripe / GatewayIntegração Stripe / Gateway</span>
+                                <span class="feature">✓ Deploy e suporte inicial</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 3.500+</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="sites" style="display: flex;">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">E-commerce</h3>
+                            <p class="servico-categoria">Loja Online com Integração</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Criação de lojas virtuais completas com catálogo, carrinho inteligente e integração com
+                                gateways de pagamento. Indicado para negócios que desejam vender online com estrutura
+                                profissional.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Catálogo Produto</span>
+                                <span class="feature">✓ Carrinho & Checkout</span>
+                                <span class="feature">✓ Integração Gateway Pagamento</span>
+                                <span class="feature">✓ Gestão Estoque</span>
+                                <span class="feature">✓ Integração ERP / Sistema Loja</span>
+                                <span class="feature">✓ Relatórios básicos</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 4.500+</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="sites" style="display: flex;">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Blog / CMS</h3>
+                            <p class="servico-categoria">Gestão de Conteúdo Profissional</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Plataforma de conteúdo com painel administrativo intuitivo e estrutura otimizada para
+                                SEO. Ideal para empresas que desejam publicar artigos, notícias e materiais
+                                estratégicos.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Editor de Conteúdo</span>
+                                <span class="feature">✓ Categorias/Tags</span>
+                                <span class="feature">✓ SEO Técnico Base</span>
+                                <span class="feature">✓ Sistema Comentários</span>
+                                <span class="feature">✓ Integração RSS</span>
+                                <span class="feature">✓ Estrutura escalável</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 2.000+</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="sites" style="display: flex;">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Portal Corporativo</h3>
+                            <p class="servico-categoria">Presença Online</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Websites institucionais profissionais com design moderno, responsivo e atualizado.
+                                Showcase da sua marca.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Design Personalizado</span>
+                                <span class="feature">✓ CMS Integrado</span>
+                                <span class="feature">✓ Formulário Contato</span>
+                                <span class="feature">✓ Otimização SEO</span>
+                                <span class="feature">✓ Galeria Projeto</span>
+                                <span class="feature">✓ Blog Integrado</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 4.500+</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <!-- JOGOS -->
+                    <div class="card-servico" data-servico="jogos">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Jogos Indie & MVP</h3>
+                            <p class="servico-categoria">Casual & Indie Games</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Desenvolvimento de jogos 2D ou 3D focados na validação de ideias, projetos autorais e
+                                experiências interativas sob medida. Ideal para criadores, startups ou empresas que
+                                desejam testar uma mecânica, conceito ou produto gamificado antes de escalar.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Unity / Godot / GameMaker</span>
+                                <span class="feature">✓ Mecânicas personalizadas</span>
+                                <span class="feature">✓ Build para PC ou Web</span>
+                                <span class="feature">✓ Sistema básico de pontuação / progressão</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 2.500 – 3.500</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="jogos">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Jogos Multiplayer Simples</h3>
+                            <p class="servico-categoria">Online & Competitivo</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Criação de experiências online com sistema de salas, ranking e comunicação entre
+                                jogadores. Solução indicada para jogos competitivos, eventos interativos, ativações
+                                digitais ou projetos que exigem interação em tempo real..</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Sistema de salas</span>
+                                <span class="feature">✓ Ranking simples</span>
+                                <span class="feature">✓ Backend básico</span>
+                                <span class="feature">✓ Deploy em nuvem</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 4.500 – 7.000</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="jogos">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Jogos Mobile</h3>
+                            <p class="servico-categoria">Mobile</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Desenvolvimento de jogos otimizados para Android (com opção de iOS), focados em
+                                performance, engajamento e monetização. Indicado para projetos que buscam publicação em
+                                loja e geração de receita por anúncios ou compras internas.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Android (iOS opcional)</span>
+                                <span class="feature">✓ Ads / IAP</span>
+                                <span class="feature">✓ Analytics</span>
+                                <span class="feature">✓ Publicação assistida</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 3.000 – 5.000</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <!-- DESIGN -->
+                    <div class="card-servico" data-servico="design">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">UI/UX Design</h3>
+                            <p class="servico-categoria">Interface & Experiência</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Design de interfaces intuitivas e atrativas. Pesquisa de usuário, wireframes,
+                                prototipagem e testes de usabilidade.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ User Research</span>
+                                <span class="feature">✓ Wireframes</span>
+                                <span class="feature">✓ Prototipagem Interativa</span>
+                                <span class="feature">✓ Design System</span>
+                                <span class="feature">✓ Testes Usabilidade</span>
+                                <span class="feature">✓ Figma/Adobe XD</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 350 - R$ 1.200</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="design">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Branding</h3>
+                            <p class="servico-categoria">Identidade Visual</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Identidade visual completa para sua marca. Logo, paleta de cores, tipografia e brand
+                                guidelines profissionais.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Criação Logo</span>
+                                <span class="feature">✓ Paleta de Cores</span>
+                                <span class="feature">✓ Tipografia Marca</span>
+                                <span class="feature">✓ Brand Guidelines</span>
+                                <span class="feature">✓ Aplicações Marca</span>
+                                <span class="feature">✓ Versão Monocromática</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 700 - R$ 1.000</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="design">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Design Gráfico</h3>
+                            <p class="servico-categoria">Conteúdo Visual</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Criação de materiais visuais para redes sociais, campanhas e marketing. Posts, banners,
+                                infográficos e mais.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Posts Redes Sociais</span>
+                                <span class="feature">✓ Banners Web</span>
+                                <span class="feature">✓ Infográficos</span>
+                                <span class="feature">✓ Flyers & Posters</span>
+                                <span class="feature">✓ Apresentações</span>
+                                <span class="feature">✓ Animações GIF</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 350 - R$ 600</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card-servico" data-servico="design">
+                        <div class="servico-header">
+                            <h3 class="servico-titulo">Motion Design</h3>
+                            <p class="servico-categoria">Animação & VFX</p>
+                        </div>
+                        <div class="servico-descricao">
+                            <p>Animações profissionais para vídeos, websites e campanhas. Motion graphics que chamam
+                                atenção e engajam.</p>
+                            <div class="servico-features">
+                                <span class="feature">✓ Animações 2D/3D</span>
+                                <span class="feature">✓ Motion Graphics</span>
+                                <span class="feature">✓ Vídeo Comercial</span>
+                                <span class="feature">✓ Intros & Outros</span>
+                                <span class="feature">✓ Adobe CC Completo</span>
+                                <span class="feature">✓ Efeitos Especiais</span>
+                            </div>
+                        </div>
+                        <div class="servico-valor">
+                            <span class="valor-texto">A partir de</span>
+                            <span class="valor-preco">R$ 800</span>
+                            <span class="valor-frequencia">por projeto</span>
+                            <a href="contato.html"><button class="btn-servico">Contratar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="caracteristicas">
+            <div class="container-caracteristicas">
+                <div class="card-caracteristica">
+                    <div class="caracteristica-icone">💻</div>
+                    <h3 class="caracteristica-titulo">Desenvolvimento Completo</h3>
+                    <p class="caracteristica-descricao">Landing Pages, SaaS, E-commerce e Portais. Soluções web prontas
+                        para crescer.</p>
+                </div>
+
+                <div class="card-caracteristica">
+                    <div class="caracteristica-icone">🎨</div>
+                    <h3 class="caracteristica-titulo">Design Profissional</h3>
+                    <p class="caracteristica-descricao">UI/UX, Branding e Design Gráfico. Visuals que convertem e deixam
+                        marca.</p>
+                </div>
+
+                <div class="card-caracteristica">
+                    <div class="caracteristica-icone">📱</div>
+                    <h3 class="caracteristica-titulo">Responsivo & Otimizado</h3>
+                    <p class="caracteristica-descricao">Funciona perfeitamente em todos os dispositivos e carrega super
+                        rápido.</p>
+                </div>
+
+                <div class="card-caracteristica">
+                    <div class="caracteristica-icone">📈</div>
+                    <h3 class="caracteristica-titulo">Focado em Resultados</h3>
+                    <p class="caracteristica-descricao">Métricas, conversão e ROI. Tudo pensado para seu negócio
+                        crescer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">VictorCestaro</span>
+            </div>
+
+            <div class="footer-content">
+                <p class="footer-copyright">© 2024 Design & Código por Victor Cestaro.<br>Todos os direitos reservados.
+                </p>
+
+                <div class="footer-sociais">
+                    <a href="mailto:contact@victorcestaro.com" class="social-link" title="Email">
+                        <span class="social-icon">✉</span> Email
+                    </a>
+                    <a href="https://linkedin.com/in/victorcestaro" target="_blank" class="social-link"
+                        title="LinkedIn">
+                        <span class="social-icon">in</span> LinkedIn
+                    </a>
+                    <a href="https://github.com/victorcestaro" target="_blank" class="social-link" title="GitHub">
+                        <span class="social-icon">◈</span> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5516992119714?text=Olá%20Victor!%20Gostaria%20de%20conversar%20sobre%20serviços"
+        target="_blank" class="whatsapp-btn" title="Entre em contato via WhatsApp">
+        <img src="../assets/icons/whatsapp.png" alt="whatsapp" class="whatsapp-icon">
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
